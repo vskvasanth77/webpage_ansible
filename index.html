@@ -1,15 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Static Website</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <h1>Welcome to My Static Website!</h1>
-    <p>This is a simple static website deployed using Ansible and AWS EC2.</p>
-    <button onclick="showAlert()">Click Me</button>
-    <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Static Web Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+      nav {
+        background: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+      }
+      nav ul li {
+        margin-left: 20px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: #333;
+      }
+      .hero {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: #c1def2;
+      }
+      .hero h2 {
+        font-size: 36px;
+      }
+      .hero button {
+        background: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      .services {
+        padding: 50px;
+        background: #f8f9fa;
+        text-align: center;
+      }
+      .services .service-box {
+        background: white;
+        padding: 20px;
+        margin: 15px;
+        display: inline-block;
+        width: 30%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+      }
+      .contact {
+        text-align: center;
+        padding: 50px;
+        background: #d4edda;
+      }
+      .contact button {
+        background: #28a745;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      footer {
+        background: #343a40;
+        color: white;
+        text-align: center;
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <h1>MyWebsite</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <h2>Welcome to the web page</h2>
+      <p>Modern, Responsive, and Clean UI</p>
+      <button>Get Started</button>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <h3>Our Services</h3>
+      <div class="service-box">
+        <h4>Web Design</h4>
+        <p>Creative and modern UI/UX designs.</p>
+      </div>
+      <div class="service-box">
+        <h4>Web Development</h4>
+        <p>Building scalable and responsive websites.</p>
+      </div>
+      <div class="service-box">
+        <h4>SEO Optimization</h4>
+        <p>Boost your website ranking on search engines.</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h3>Get in Touch</h3>
+      <p>Have questions? We’d love to hear from you.</p>
+      <button>Contact Us</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 MyWebsite. All Rights Reserved.</p>
+    </footer>
+  </body>
 </html>
